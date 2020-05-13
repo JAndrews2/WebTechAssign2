@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="theatreTickets">
+    <title>Theatre Tickets</title>
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Theatre Tickets</h1>
+    <form>
+        <fieldset id = "detailField">
+            <h1>Details</h1>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="nameInput" name="name" required>
+            </div>
+            <div>
+                <label for="1stLine">Address line 1 :</label>
+                <input type="text" id="1stLine" name="1stLine" required>
+            </div>
+            <div>
+                <label for="2ndLine">Address line 2 :</label>
+                <input type="text" id="2ndLine" name="2ndLine">
+            </div>
+            <div>
+                <label for="postcode">Postcode:</label>
+                <input type="text" id="postcode" name="postcode" required>
+            </div>
+        </fieldset>
+        
+    <form>
+        <fieldset id="showField">
+            <h1>Show Selection</h1>
+            <input type="radio" id="ticket1" name="ticket" value="Phantom of the opera" >
+            <label for="ticket1">Phantom of the opera - £79</label>
+            
+            <input type="radio" id="ticket2" name="ticket" value="Hamilton" >
+            <label for="ticket2">Hamilton - £85</label>
+            
+            <input type="radio" id="ticket3" name="ticket" value="Lion King" >
+            <label for="ticket3">Lion King - £67</label>
+            
+            <input type="radio" id="ticket4" name="ticket" value="Miss Saigon" >
+            <label for="ticket4">Miss Saigon - £83</label>
+            
+            <label for="noOfTickets"> Number of Tickets</label>
+            <input type="number" id="noOfTickets" name="noOfTickets" min="1" >
+        </fieldset>
+<p id="showOutput"></p>
+        <fieldset id = "deliveryField">
+            <h1>Delivery Method</h1>
+            <input type="radio" id="eticket" name="pref" value="0" >
+            <label for="eticket">E-ticket - Free</label>
+            
+            <input type="radio" id="boxOffice" name="pref" value="1.50" >
+            <label for="boxoffice">Box Office - £1.50</label>
+            
+            <input type="radio" id="post" name="pref" value="3.99" >
+            <label for="post">Post - £3.99</label>
+        </fieldset>
+        <p id = "dOutput"></p>
+            <p><button type = "button" id="book" name="book"> Book </button></p>
+            <p id="output"></p>
+            <p id="eDisOutput"></p>
+            <p id="eDOutput"></p>
+            <p id="eFOutput"></p>
+
+    </form>
+    <script src="script/main.js"></script>
+</body>
+
+</html>

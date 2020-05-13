@@ -1,0 +1,21 @@
+#slot1{
+    width: 200px;
+}
+#slot2{
+    width: 200px;
+}
+#slot3{
+    width: 200px;
+}
+fieldset {
+    width:620px;
+}
+label {
+    width: 100px;
+    display: inline-block;
+}
+#output {
+  min-height: 20px;
+  border: 1px solid black; 
+  width:620px; 
+}
